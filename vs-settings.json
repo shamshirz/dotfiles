@@ -1,0 +1,7 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "elm.formatOnSave": true
+}
