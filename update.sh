@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-codeSettings=~/dotfiles/vs-settings.json
+codeSettings=~/dotfiles/vs-code-settings.json
 globalNpm=~/dotfiles/global-npm.txt
 
 echo "Brew dump"
