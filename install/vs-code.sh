@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 echo "Installing Visual Studio Code"
 curl "https://go.microsoft.com/fwlink/?LinkID=620882" -o ~/Downloads/vscode.zip

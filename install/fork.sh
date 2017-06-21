@@ -1,6 +1,6 @@
-#!/bin/zsh
+#!/bin/bash
 
-echo "Getting git-fork UI Tool"
+echo "Getting Dash documentation"
 curl "https://git-fork.com/update/files/Fork.dmg" -o ~/Downloads/fork.dmg
 
 hdiutil attach ~/Downloads/fork.dmg

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # I'm expecting a $dots var to be something like ~/git/dotfiles or something
 

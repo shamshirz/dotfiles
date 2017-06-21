@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Expects $dots to be home of dot files (exported in zshrc)
 
