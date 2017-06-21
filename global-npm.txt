@@ -1,8 +1,4 @@
 /usr/local/lib
 ├── elm-format@0.6.1-alpha
-├── gulp@3.9.1
-├── jasmine@2.6.0
-├── mocha@3.4.2
-├── npm@5.0.3
-└── watchify@3.9.0
+└── npm@5.0.3
 

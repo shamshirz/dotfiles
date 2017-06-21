@@ -1,0 +1,4 @@
+PeterJausovec.vscode-docker
+mjmcloug.vscode-elixir
+robertohuertasm.vscode-icons
+sbrink.elm
