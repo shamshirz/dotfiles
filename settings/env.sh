@@ -16,14 +16,7 @@ function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # Aliases
 
-alias zshconfig="vim $dots/zshrc_dot_me"
-alias envconfig="vim $dots/env.sh"
-alias upDot="sh $dots/update.sh"
-
-alias start-pg='pg_ctl -l $PGDATA/server.log start'
-alias stop-pg='pg_ctl stop -m fast'
-alias restart-pg='pg_ctl reload'
-alias pgStart='brew services restart postgresql'
+alias upDot="sh $dots/update-settings.sh"
 
 alias aws='cd ~/.aws/'
 alias pgres='cd /usr/local/var/postgres'
@@ -33,8 +26,6 @@ alias gs="git status"
 alias ru="git remote update"
 alias gc="git commit"
 
-
 echo "Welcome back"
-cat $dots/aaron.txt
+cat $dots/settings/aaron.txt
 echo $(date)
-

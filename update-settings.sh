@@ -2,9 +2,11 @@
 
 # Expects $dots to be home of dot files (exported in zshrc)
 
-codeSettings=$dots/vs-code-settings.json
-globalNpm=$dots/global-npm.txt
-codePackages=$dots/vs-code-package-list.txt
+codeSettings=vs-code-settings.json
+globalNpm=global-npm.txt
+codePackages=vs-code-package-list.txt
+
+cd $dots/settings
 
 echo "Brew dump"
 brew bundle dump -f

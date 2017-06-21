@@ -1,7 +1,9 @@
 #!/bin/zsh
 
+cd $dots/settings
+
 echo "Going to install everything now, hold your butt"
-for script in install/*.sh; do "$script"
+for script in ../install/*.sh; do "$script"
 
 
 # This comes from the Brewfile
