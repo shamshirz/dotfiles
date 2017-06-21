@@ -1,7 +1,8 @@
 Need to install elm-format manually for not
 VS Code can take advantage of it
 
-sudo npm install -f elm-format
+npm install -g elm
+npm install -g elm-format
 
 
 Also need to get my packages from VS code
