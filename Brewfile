@@ -17,8 +17,6 @@ brew "wxmac"
 brew "erlang"
 brew "elixir"
 brew "giflib"
-brew "gradle"
 brew "pkg-config"
-brew "postgresql", restart_service: true
 brew "zsh"
 brew "zsh-completions"
