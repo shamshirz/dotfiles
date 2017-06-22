@@ -9,5 +9,4 @@ cp -ir /Volumes/Fork/Fork.app /Applications
 
 sudo hdiutil unmount /Volumes/Fork
 
-rm ~/Downloads/fork.dmg
-echo 
+echo "Dash successfully installed."
