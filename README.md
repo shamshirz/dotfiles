@@ -25,7 +25,8 @@ That zshrc expects the env.sh file, which is were the bulk of the settings are
 
 ## Still Manual, but to be automated
 
- * Docker
+ * Iterm2
+ * zsh
 
 ## Installed via scripts
 
@@ -34,6 +35,8 @@ That zshrc expects the env.sh file, which is were the bulk of the settings are
  * Visual Studio Code
   * Plugins for elixir / elm / etc
  * Everything in homebrew
+ * Docker
+ 
 
 
 
