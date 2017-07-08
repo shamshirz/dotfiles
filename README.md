@@ -59,22 +59,19 @@ If you don't use the 'install-it-all.sh' script then follow these steps most lik
 
 
 
-## Visual Studio Code setup (3 min ideally)
+## Visual Studio Code setup (1 min ideally)
 
 This is unfortunately a little involved still
 
-The install script will do the default install and open it. Then we need to add the `code` command to the PATH, then add my normal settings (tabs, elm format etc)
+The install script will do the default install and open it. Then we need to add the `code` command to the PATH, then just rerun the script.
 
- * `sh install/vs-code`
+ * `sh vs-code/install`
  * In vs code, open the command pallet 'cmd + shift + p'
   * Search for install shell
  * Open a new terminal
  * `which code`
   * should spit out /usr/local/bin/code
- * `sh ./vs-code-packages.sh`
- * Finally, open preferences and link to the settings in vs-code-settings
-
-
+ * `sh vs-code/install`
 
 # Keeping me up to date
 
