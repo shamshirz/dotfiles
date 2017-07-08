@@ -9,6 +9,7 @@ It's not totally automated just yet, but this has the gist of things you need an
  * Chrome
  * Iterm2
  * Slack
+ * Postman
  * Spectacle
  * f.lux
  * Private Internet Access (PIA)

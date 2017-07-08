@@ -2,6 +2,9 @@
 
 # I'm expecting a $dots var to be something like ~/git/dotfiles or something
 
+export GOPATH=~/.golang
+export PATH=$GOPATH/bin:$PATH
+
 # Owner
 export USER_NAME="aaron"
 export wk_dir="~/Git"
