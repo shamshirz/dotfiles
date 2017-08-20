@@ -12,7 +12,7 @@ echo "Brew dump"
 brew bundle dump -f
 
 echo "VS-Code update script"
-sh vs-code/updateConfig
+sh ../vs-code/updateConfig.sh
 
 echo "Global Npm Packages - $globalNpm"
 npm list -g --depth=0 > $globalNpm

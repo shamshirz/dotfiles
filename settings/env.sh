@@ -10,8 +10,8 @@ export GOPATH=~/.golang
 export PATH=$GOPATH/bin:$PATH
 
 # Owner
-export USER_NAME="aaron"
-export AWS_USERNAME="aaron"
+export USER_NAME=aaron
+export AWS_USERNAME=aaron
 export wk_dir="~/Git"
 export PATH=$PATH:/usr/local/bin
 export DOCKER_VOLUMES=/Users/aaron/Documents/docker_volumes
@@ -35,8 +35,11 @@ alias gs="git status"
 alias ru="git remote update"
 alias gc="git commit"
 alias clb="git fetch --prune origin"
-
+alias howgif=echo "ffmpeg -i in.mov -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif"
 alias mypsql="psql -h 127.0.0.1 -d postgres -U postgres -d crowbar_test"
+
+# Docker stuff
+alias docCleanup="docker rm $(docker ps -qa --no-trunc --filter "status=exited")"
 
 echo "Welcome back"
 cat $dots/settings/aaron.txt
