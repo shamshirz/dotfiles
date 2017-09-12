@@ -16,6 +16,8 @@ export wk_dir="~/Git"
 export PATH=$PATH:/usr/local/bin
 export DOCKER_VOLUMES=/Users/aaron/Documents/docker_volumes
 
+# Erlang (specifically iex shell history)
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 # FileSearch
 #function f() { find . -iname "*$1*" ${@:2} }
@@ -26,20 +28,24 @@ function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # Aliases
 
-alias upDot="sh $dots/update-settings.sh"
+alias up-dot="sh $dots/update-settings.sh"
 
-alias pgres='cd /usr/local/var/postgres'
 alias ls="ls -G"
 alias log="git log --pretty=oneline --abbrev-commit"
 alias gs="git status"
 alias ru="git remote update"
 alias gc="git commit"
 alias clb="git fetch --prune origin"
+alias git-undo="git reset HEAD~"
+alias git-redo="git commit -c ORIG_HEAD"
 alias howgif=echo "ffmpeg -i in.mov -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif"
 alias mypsql="psql -h 127.0.0.1 -d postgres -U postgres -d crowbar_test"
+alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg-status="ps aux | grep postgres"
 
 # Docker stuff
-alias docCleanup="docker rm $(docker ps -qa --no-trunc --filter "status=exited")"
+alias docker-clean="docker rm $(docker ps -qa --no-trunc --filter "status=exited")"
 
 echo "Welcome back"
 cat $dots/settings/aaron.txt

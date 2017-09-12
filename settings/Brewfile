@@ -25,7 +25,7 @@ brew "hub"
 brew "imagemagick"
 brew "libyaml"
 brew "node"
-brew "postgresql"
+brew "postgresql", restart_service: true
 brew "qt@5.5"
 brew "ruby-build"
 brew "rbenv"
