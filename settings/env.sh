@@ -41,7 +41,7 @@ alias git-redo="git commit -c ORIG_HEAD"
 alias gwip="git add .; git commit -m \"WIP - REMOVE ME\";"
 alias standup="log --since yesterday --oneline --author avotre"
 
-alias howgif=echo "ffmpeg -i in.mov -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif"
+alias howgif="echo 'ffmpeg -i in.mov -s 601x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif'"
 alias mypsql="psql -h 127.0.0.1 -d postgres -U postgres -d crowbar_test"
 alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
