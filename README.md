@@ -75,7 +75,7 @@ The install script will do the default install and open it. Then we need to add 
 
 # Keeping me up to date
 
-To keep this stuff up to date run the `update.sh` script
+To keep this stuff up to date run the `update-settings.sh` script
 
 It dumps
  * Current brew status
