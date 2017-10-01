@@ -26,6 +26,14 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 #mkdir and cd
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
+#convert .mov into .gif
+function gifme() {
+  localFile=$(basename "$1")
+  baseName="${filename%.*}"
+  ffmpeg -i $1 -s 601x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $baseName.gif
+}  
+
+
 # Aliases
 
 alias up-dot="sh $dots/update-settings.sh"
