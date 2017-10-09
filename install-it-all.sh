@@ -1,19 +1,21 @@
 #!/bin/bash
 
-cd $dots/settings
+echo "🔥🔥 Going to install everything now, hold your butt 🔥🔥"
 
-echo "Going to install everything now, hold your butt"
+cd $dots/settings
 for script in ../install/*.sh; do "$script"
 
 
-# This comes from the Brewfile
+echo "🔥 Installing Brew things 🔥"
 brew tap Homebrew/bundle
 brew bundle
 
 
-# Elm is pretty easy
-npm install -g elm
+echo "🔥 Installing Global Npm 🔥"
+npm install -g elm elm-format yarn
 
 
-# Update the zshrc
+echo "🔥 Linking the local 'zshrc_dot_me' to the one '~./zshrc' 🔥"
 ln -s zshrc_dot_me ~/.zshrc
+
+echo "🔥🔥 Victory! 🔥🔥"

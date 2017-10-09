@@ -23,14 +23,11 @@ if hash code 2>/dev/null; then
   
 else
 
-  echo "🌀 Installing Visual Studio Code"
-  curl "https://go.microsoft.com/fwlink/?LinkID=620882" -o ~/Downloads/vscode.zip
-
-  unzip ~/Downloads/vscode.zip -d ~/Applications/
+  echo "🌀 Bummer, can't install VS code with Curl"
+  echo "🌀 Download it here and install it manually :( sorry - https://code.visualstudio.com/docs/?dv=osx"
 
   open "/Applications/Visual Studio Code.app"
-
-  echo "🌀 If I failed to unzip, then download manually from here - https://go.microsoft.com/fwlink/?LinkID=620882"
+  
   echo "🌀 Add the 'code' cli manually then rerun this script"
   echo "🌀 In VS-Code, run pallete command (cmd + shift + p) -> type 'Shell Command'"
 
