@@ -1,0 +1,43 @@
+{
+    "New function": {
+        "prefix": "def",
+        "body": [
+            "def ${1:name}(${2:args}) do",
+            "\t$0",
+            "end"
+        ],
+        "description": "Start a new function definition"
+    },
+    "Spec": {
+        "prefix": "spec",
+        "body": [
+            "@spec ${1:name}(${2:args}) :: ${3:return}"
+        ],
+        "description": "Added a spec to a function"
+    },
+    "If Else": {
+        "prefix": "ife",
+        "body": [
+            "if $1 do",
+            "\t$0",
+            "else",
+            "\t",
+            "end"
+        ]
+    },
+    "IO.Inspect": {
+        "prefix": ">ins",
+        "body": [
+            "|> IO.inspect()"
+        ]
+    },
+    "Defmodule": {
+        "prefix": "defmod",
+        "body": [
+            "defmodule ${1:module} do",
+            "\t$0",
+            "end"
+        ]
+    }
+}
+

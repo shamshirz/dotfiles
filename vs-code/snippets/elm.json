@@ -1,0 +1,60 @@
+{
+    "Module": {
+        "prefix": "mod",
+        "body": [
+            "module ${1:$TM_FILENAME} exposing (..)",
+            "",
+            "",
+            "$0"
+        ]
+    },
+    "Import Html": {
+        "prefix": "imhtml",
+        "body": [
+            "import Html exposing (..)",
+            "import Html.Attributes exposing (..)",
+            "import Html.Events exposing (..)",
+            "",
+            "",
+            "$0"
+        ]
+    },
+    "Import Data.X": {
+        "prefix": "imdata",
+        "body": [
+            "import Data.${1:Type} exposing (${1:Type})$0"
+        ]
+    },
+    "New Function": {
+        "prefix": "fun",
+        "body": [
+            "${1:name} : ${2:args}",
+            "${1:name} ${3:vars} =",
+            "\t$0"
+        ]
+    },
+    "Elm Model": {
+        "prefix": "elmmodel",
+        "body": [
+            "type alias ${1:name} =",
+            "\t{ ${2:property} : ${3:Type}",
+            "\t}",
+            "",
+            "",
+            "initialModel : ${1:name}",
+            "initialModel =",
+            "\t{ ${2:property} = ${4:value}",
+            "\t}"
+        ]
+    },
+    "Let In": {
+        "prefix": "letin",
+        "body": [
+            "let",
+            "\t$0",
+            "in",
+            "\t"
+        ]
+    }
+}
+
