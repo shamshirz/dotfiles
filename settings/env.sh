@@ -28,9 +28,9 @@ function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 #convert .mov into .gif
 function gifme() {
-  localFile=$(basename "$1")
-  baseName="${filename%.*}"
-  ffmpeg -i $1 -s 601x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $baseName.gif
+  filename=$(basename "$1")
+  name="${filename%.*}"
+  ffmpeg -i $1 -filter:v scale=400:-1 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $name.gif
 }  
 
 
