@@ -50,6 +50,7 @@ alias gwip="git add .; git commit -m \"WIP - REMOVE ME\";"
 alias standup="log --since yesterday --oneline --author avotre"
 alias retro="log --since '1 week' --oneline --author avotre"
 alias mps="mix phx.server"
+alias format="PATH=/Users/aaron/Git/elixir/bin:$PATH mix format"
 
 alias howgif="echo 'ffmpeg -i in.mov -s 601x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif'"
 alias mypsql="psql -h 127.0.0.1 -d postgres -U postgres -d crowbar_test"
