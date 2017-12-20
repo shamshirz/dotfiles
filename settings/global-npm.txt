@@ -5,7 +5,8 @@
 ├── elm-live@2.7.5
 ├── elm-oracle@1.1.1
 ├── elm-test@0.18.9
+├── get-graphql-schema@2.1.1
 ├── netlify-cli@1.2.2
-├── npm@5.5.1
+├── npm@5.6.0
 └── yarn@1.1.0
 
