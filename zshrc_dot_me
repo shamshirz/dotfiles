@@ -88,3 +88,5 @@ export dots=~/git/dotfiles
 
 source $dots/settings/env.sh
 
+
+export PATH="$HOME/.yarn/bin:$PATH"
