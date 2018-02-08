@@ -1,6 +1,6 @@
 /usr/local/lib
 ├── elm@0.18.0
-├── elm-analyse@0.12.1
+├── elm-analyse@0.13.3
 ├── elm-format@0.6.1-alpha
 ├── elm-live@2.7.5
 ├── elm-oracle@1.1.1
