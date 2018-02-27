@@ -53,6 +53,9 @@ alias mps="mix phx.server"
 alias callers="mix xref callers"
 alias format="PATH=/Users/aaron/Git/elixir/bin:$PATH mix format"
 
+# Elm
+alias elma="elm-analyse -s --port=3379"
+
 alias howgif="echo 'ffmpeg -i in.mov -s 601x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif'"
 alias mypsql="psql -h 127.0.0.1 -d postgres -U postgres -d crowbar_test"
 alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
