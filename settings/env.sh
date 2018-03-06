@@ -49,9 +49,11 @@ alias git-redo="git commit -c ORIG_HEAD"
 alias gwip="git add .; git commit -m \"WIP - REMOVE ME\";"
 alias standup="log --since yesterday --oneline --author avotre"
 alias retro="log --since '1 week' --oneline --author avotre"
+
+# Elixir
+alias retire-me="mix aws retire $(git rev-parse --abbrev-ref HEAD)"
 alias mps="mix phx.server"
 alias callers="mix xref callers"
-alias format="PATH=/Users/aaron/Git/elixir/bin:$PATH mix format"
 
 # Elm
 alias elma="elm-analyse -s --port=3379"
