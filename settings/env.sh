@@ -64,6 +64,10 @@ alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.p
 alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg-status="ps aux | grep postgres"
 
+# Postgres stuff
+# brew services restart postgresql
+
+
 # Docker stuff
 # alias docker-clean="docker rm $(docker ps -qa --no-trunc --filter "status=exited")"
 
