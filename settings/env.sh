@@ -51,7 +51,6 @@ alias standup="log --since yesterday --oneline --author avotre"
 alias retro="log --since '1 week' --oneline --author avotre"
 
 # Elixir
-alias retire-me="mix aws retire $(git rev-parse --abbrev-ref HEAD)"
 alias mps="mix phx.server"
 alias callers="mix xref callers"
 
