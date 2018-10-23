@@ -8,6 +8,8 @@ source $dots/settings/secret.sh
 
 export GOPATH=~/.golang
 export PATH=$GOPATH/bin:$PATH
+# add rust binaries that I've created (rust corvus-cli)
+export PATH=/Users/aaron/.cargo/bin:$PATH
 
 # Owner
 export USER_NAME=aaron
@@ -31,11 +33,11 @@ function gifme() {
   filename=$(basename "$1")
   name="${filename%.*}"
   ffmpeg -i $1 -filter:v scale=400:-1 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $name.gif
-}  
+}
 
 
 # Aliases
-
+alias retire="corvus-cli crowbar retire $(git_current_branch)"
 alias up-dot="sh $dots/update-settings.sh"
 
 alias ls="ls -G"
