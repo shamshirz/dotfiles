@@ -10,12 +10,12 @@ export GOPATH=~/.golang
 export PATH=$GOPATH/bin:$PATH
 # add rust binaries that I've created (rust corvus-cli)
 export PATH=/Users/aaron/.cargo/bin:$PATH
+export PATH=$PATH:/usr/local/bin
 
 # Owner
 export USER_NAME=aaron
 export AWS_USERNAME=aaron
 export wk_dir="~/Git"
-export PATH=$PATH:/usr/local/bin
 export DOCKER_VOLUMES=/Users/aaron/Documents/docker_volumes
 
 # Erlang (specifically iex shell history)
@@ -48,13 +48,19 @@ alias gc="git commit"
 alias clb="git fetch --prune origin"
 alias git-undo="git reset HEAD~"
 alias git-redo="git commit -c ORIG_HEAD"
-alias gwip="git add .; git commit -m \"WIP - REMOVE ME\";"
+alias gwip="git add .; git commit --no-verify -m \"WIP - REMOVE ME\";"
 alias standup="log --since yesterday --oneline --author avotre"
 alias retro="log --since '1 week' --oneline --author avotre"
+alias gforgot="git diff HEAD^ HEAD"
+alias amend="git add .; git commit --amend --no-edit"
+alias graph="git log --graph --decorate --oneline"
 
 # Elixir
-alias mps="mix phx.server"
+alias mps="mix do graphql, phx.server"
+alias imps="mix graphql && iex -S mix phx.server"
 alias callers="mix xref callers"
+alias mtc="mix test --cover"
+alias docs="mix docs && cd docs && python3 -m http.server"
 
 # Elm
 alias elma="elm-analyse -s --port=3379"
@@ -72,7 +78,12 @@ alias pg-status="ps aux | grep postgres"
 # Docker stuff
 # alias docker-clean="docker rm $(docker ps -qa --no-trunc --filter "status=exited")"
 
+
 echo "Welcome back"
 cat $dots/settings/aaron.txt
 echo $(date)
 
+# brew location for asdf
+. /usr/local/Cellar/asdf/0.7.5/asdf.sh
+
+. /usr/local/Cellar/asdf/0.7.5/etc/bash_completion.d/asdf.bash
