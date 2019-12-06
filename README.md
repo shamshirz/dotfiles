@@ -17,8 +17,8 @@ It's not totally automated just yet, but this has the gist of things you need an
  * Setup iterm + zsh
 
  The brewfile should get zsh and I might still need to DL oh-my-zsh
- Then make a symlink to the the local zshrc 
-  * `ln -s zshrc_dot_me ~/.zshrc`
+ Then make a symlink to the the local zshrc
+  * `ln -s $PWD/zshrc_dot_me ~/.zshrc`
 
 That zshrc expects the env.sh file, which is were the bulk of the settings are
 
@@ -37,7 +37,7 @@ That zshrc expects the env.sh file, which is were the bulk of the settings are
   * Plugins for elixir / elm / etc
  * Everything in homebrew
  * Docker
- 
+
 
 
 

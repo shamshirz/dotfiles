@@ -16,6 +16,6 @@ npm install -g elm elm-format yarn
 
 
 echo "🔥 Linking the local 'zshrc_dot_me' to the one '~./zshrc' 🔥"
-ln -s zshrc_dot_me ~/.zshrc
+ln -s $PWD/zshrc_dot_me ~/.zshrc
 
 echo "🔥🔥 Victory! 🔥🔥"
