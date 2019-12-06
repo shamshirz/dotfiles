@@ -1,19 +1,12 @@
-My Dopee Dotfiles
-=================
-
-
-It's not totally automated just yet, but this has the gist of things you need and some small automations.
-
 # Manual Essentials
 
  * Chrome
  * Iterm2
  * Slack
- * Postman
  * Spectacle
  * f.lux
- * Private Internet Access (PIA)
  * Spotify
+ * 1Password
  * Setup iterm + zsh
 
  The brewfile should get zsh and I might still need to DL oh-my-zsh
@@ -23,20 +16,15 @@ It's not totally automated just yet, but this has the gist of things you need an
 That zshrc expects the env.sh file, which is were the bulk of the settings are
 
 
-
-## Still Manual, but to be automated
-
- * Iterm2
- * zsh
-
 ## Installed via scripts
 
- * Dash
- * Fork
- * Visual Studio Code
+* Dash
+* Visual Studio Code
   * Plugins for elixir / elm / etc
- * Everything in homebrew
- * Docker
+* Everything in homebrew
+* Docker
+* asdf
+  * All langs through here
 
 
 
@@ -54,7 +42,6 @@ If you don't use the 'install-it-all.sh' script then follow these steps most lik
 1. Setup the manual stuff, especially zsh and iterm (a little annoying, work in progress)
 2. `cd $dotfiles`
 3. `sh install/dash`
-4. `sh install/fork`
 6. Visual Studio Setup
 
 
@@ -81,4 +68,3 @@ It dumps
  * Current brew status
  * VS code settings
  * VS code packages
- * Npm global packages
