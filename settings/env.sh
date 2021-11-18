@@ -15,6 +15,7 @@ export PATH=$PATH:/usr/local/bin
 # Owner
 export USER_NAME=aaron
 export AWS_USERNAME=aaron
+export AWS_REGION=us-east-1
 export wk_dir="~/Git"
 export DOCKER_VOLUMES=/Users/aaron/Documents/docker_volumes
 
@@ -33,6 +34,16 @@ function gifme() {
   filename=$(basename "$1")
   name="${filename%.*}"
   ffmpeg -i $1 -filter:v scale=400:-1 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $name.gif
+}
+
+opr () {
+  gh pr create --web \
+    --label "house platform" \
+    --label "squad siege"
+}
+hprs () {
+  gh pr list --web \
+    --label "house platform"
 }
 
 
@@ -60,7 +71,9 @@ alias mps="mix do graphql, phx.server"
 alias imps="mix graphql && iex -S mix phx.server"
 alias callers="mix xref callers"
 alias mtc="mix test --cover"
-alias docs="mix docs && cd docs && python3 -m http.server"
+alias docs="mix docs && open doc/index.html"
+alias ex_test="mix test.watch --stale --formatter ExUnitNotifier --formatter ExUnit.CLIFormatter"
+alias credo="mix credo --config-name=currently_passing"
 
 # Elm
 alias elma="elm-analyse -s --port=3379"
@@ -84,6 +97,7 @@ cat $dots/settings/aaron.txt
 echo $(date)
 
 # brew location for asdf
-. /usr/local/Cellar/asdf/0.7.5/asdf.sh
+. $(brew --prefix asdf)/asdf.sh
 
-. /usr/local/Cellar/asdf/0.7.5/etc/bash_completion.d/asdf.bash
+# set config location for vs-code
+export XDG_CONFIG_HOME=~/.config
